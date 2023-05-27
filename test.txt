@@ -1,5 +1,13 @@
 git pull 확인
 
+<<<<<<< Updated upstream
 1. git 반영을 하고 싶은 경우 (내 기존 브런치 위치에서)
 - git remote update
 - git pull
+=======
+2. 내가 작업하던 사항이 있고, git 반영을 하고 싶은 경우 (내 기존 브런치 위치에서)
+- git stash
+- git remote update
+- git pull
+- git stash apply
+>>>>>>> Stashed changes
