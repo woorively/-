@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-text {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-image {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        .container3 {
+            position: relative;
+            background-color: aliceblue;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-height: 100vh;
+            width: 70vw;
+            height: 99vh;
+            box-sizing: border-box;
+            border: 1px solid skyblue;
+            border-radius: 10px;
+
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .container3 img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 1000px) {
+            .container3 {
+                width: 90%;
+            }
+        }
+
+        .t5 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-70%);
+            font-size: 25px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fade-in-text 2s ease-in-out 2s forwards;
+
+        }
+
+        .t6 {
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            transform: translateX(-30%);
+            font-size: 25px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fade-in-text 2s ease-in-out 3s forwards;
+
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .p5 {
+            position: absolute;
+            top: 60%;
+            right: 7%;
+            /* transform: translate(-50%, -50%); */
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+        .p6 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+        .p7 {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            /* transform: translate(-50%, -50%); */
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+        .p8 {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            /* transform: translate(-50%, -50%); */
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+        .p9 {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            /* transform: translate(-50%, -50%); */
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+
+        .button3 {
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            transform: translate(-50%, -30%);
+            opacity: 0;
+            animation: fade-in-text 1s ease-in-out 5s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container3">
+        <span class="t5">드디어 목적지에 도착하였습니다.</span>
+        <span class="t6">당신은 이곳저곳 둘러보려고 합니다.</span>
+        <img class="p5" src="img/scene3_dino1.png" alt="Image 1">
+        <img class="p6" src="img/scene3_dino2.png" alt="Image 2">
+        <img class="p7" src="img/scene3_dino3.png" alt="Image 3">
+        <img class="p8" src="img/scene3_dino4.png" alt="Image 4">
+        <img class="p9" src="img/scene3_dino5.png" alt="Image 5">
+        <button class="button3">가방 고쳐메기</button>
+    </div>
+</body>
+
+</html>

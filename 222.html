@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-text {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-image {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes carMoving {
+            from {
+                    transition: transform;
+                    transform: translate(-100%, 100%);
+            }
+            to {
+                    transition: transform;
+                    transform: translate(-50%, -20%);
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        .container2 {
+            position: relative;
+            background-color: aliceblue;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-height: 100vh;
+            width: 70vw;
+            height: 99vh;
+            box-sizing: border-box;
+            border: 1px solid skyblue;
+            border-radius: 10px;
+            overflow: hidden;
+
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .container2 img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 1000px) {
+            .container2 {
+                width: 90%;
+            }
+        }
+
+        .t3 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-70%);
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fade-in-text 2s ease-in-out 2s forwards;
+
+        }
+
+        .t4 {
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            transform: translateX(-30%);
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fade-in-text 2s ease-in-out 3s forwards;
+
+        }
+
+        img {
+            height: 500px;
+            width: 500px;
+        }
+
+        .p4 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, 100%);
+
+            opacity: 0;
+            animation: fade-in-image 3s ease-in-out 4s forwards, 
+            carMoving 3s ease-in-out 4.5s forwards;
+        }
+
+        .button2 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            opacity: 0;
+            animation: fade-in-text 1s ease-in-out 7s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container2">
+        <span class="t3">설레는 마음을 앉고 당신은 기차를 기다립니다.</span>
+        <span class="t4">마침 당신이 탈 기차가 들어오네요!</span>
+        <img class="p4" src="img/scene2_car1.png" alt="Image 1">
+        <button class="button2">기차에 오르기</button>
+    </div>
+</body>
+
+</html>

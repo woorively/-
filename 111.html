@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes fade-in-text {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes fade-in-image {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        .container1 {
+            position: relative;
+            background-color: aliceblue;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            max-height: 100vh;
+            width: 70vw;
+            height: 99vh;
+            box-sizing: border-box;
+            border: 1px solid skyblue;
+            border-radius: 10px;
+            
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .container1 img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 1000px) {
+            .container1 {
+                width: 90%;
+            }
+        }
+
+        .t1 {
+            position: absolute;
+            top: 10%; left: 50%;
+            transform: translateX(-70%);
+            font-size: 25px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fade-in-text 2s ease-in-out 2s forwards;
+            
+        }
+        .t2 {
+            position: absolute;
+            top: 18%; left: 50%;
+            transform: translateX(-30%);
+            font-size: 25px;
+            font-weight: bold;
+            opacity: 0;
+            animation: fade-in-text 2s ease-in-out 3s forwards;
+            
+        }
+        img {
+            height: 400px;
+            width: 400px;
+        }
+        .p1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(10%);
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+        .p2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-65%);
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+        .p3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-120%);
+
+            opacity: 0;
+            animation: fade-in-image 1s ease-in-out 4s forwards;
+        }
+        .button1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            opacity: 0;
+            animation: fade-in-text 1s ease-in-out 5.5s forwards;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <span class="t1">여름방학을 맞은 당신,</span>
+        <span class="t2">여행을 떠날까 하는데...</span>
+        <img class="p1" src="img/scene1_dino1.png" alt="Image 1">
+        <img class="p2" src="img/scene1_dino2.png" alt="Image 2">
+        <img class="p3" src="img/scene1_dino3.png" alt="Image 3">
+        <button class="button1">떠나자!</button>
+    </div>
+</body>
+
+</html>
